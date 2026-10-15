@@ -1,0 +1,18 @@
+{
+  "id": "PROMPT-001",
+  "title": "Login fails with an invalid password",
+  "preconditions": [
+    "User is logged out"
+  ],
+  "steps": [
+    "Open /login",
+    "Enter the username",
+    "Enter an invalid password",
+    "Click the login button"
+  ],
+  "testData": {
+    "username": "standard_user",
+    "password": "wrong_pass"
+  },
+  "expectedResult": "Error message 'Invalid username or password.' is shown"
+}

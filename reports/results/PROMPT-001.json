@@ -1,0 +1,16 @@
+{
+  "id": "PROMPT-001",
+  "title": "Login fails with an invalid password",
+  "status": "passed",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "passed",
+      "command": "npx playwright test tests/specs/PROMPT-001.spec.ts",
+      "error": null
+    }
+  ],
+  "error": null,
+  "screenshot": null,
+  "trace": null
+}

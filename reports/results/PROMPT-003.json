@@ -1,0 +1,43 @@
+{
+  "id": "PROMPT-003",
+  "title": "Searching for mug shows only the Ceramic Mug",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "ProductsPage.heading": "getByRole('heading', { name: 'Products' })",
+    "ProductsPage.spinner": "getByTestId('loading-spinner')",
+    "ProductsPage.searchInput": "getByTestId('search-input')",
+    "ProductsPage.sortSelect": "getByTestId('sort-select')",
+    "ProductsPage.noResultsMessage": "getByTestId('no-results-message')",
+    "ProductsPage.productCards": "locator('[data-testid^=\"product-card-\"]')",
+    "ProductsPage.productNames": "locator('[data-testid^=\"product-link-\"]')",
+    "ProductsPage.addToCartButton()": "getByTestId(`add-to-cart-${productId}`)",
+    "ProductsPage.addToBasketButton()": "getByTestId(`add-to-basket-${productId}`)",
+    "ProductsPage.removeButton()": "getByTestId(`remove-button-${productId}`)",
+    "ProductsPage.productCard()": "getByTestId(`product-card-${productId}`)"
+  },
+  "script": "tests/specs/PROMPT-003.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-003-PROMPT-003-Sear-ff248--shows-only-the-Ceramic-Mug-chromium/test-finished-1.png",
+      "trace": "test-results/PROMPT-003-PROMPT-003-Sear-ff248--shows-only-the-Ceramic-Mug-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-003-PROMPT-003-Sear-ff248--shows-only-the-Ceramic-Mug-firefox/test-finished-1.png",
+      "trace": "test-results/PROMPT-003-PROMPT-003-Sear-ff248--shows-only-the-Ceramic-Mug-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-003-PROMPT-003-Sear-ff248--shows-only-the-Ceramic-Mug-webkit/test-finished-1.png",
+      "trace": "test-results/PROMPT-003-PROMPT-003-Sear-ff248--shows-only-the-Ceramic-Mug-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "TC-003",
+  "title": "Locked user cannot log in",
+  "preconditions": [
+    "User is logged out"
+  ],
+  "steps": [
+    "Open /login",
+    "Enter username",
+    "Enter password",
+    "Click the login button"
+  ],
+  "testData": {
+    "raw": "locked_user / test123"
+  },
+  "expectedResult": "Error message 'This user has been locked out.' is shown and the user stays on /login"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "TC-004",
+  "title": "Login fails with empty username",
+  "preconditions": [
+    "User is logged out"
+  ],
+  "steps": [
+    "Open /login",
+    "Leave username empty",
+    "Enter password",
+    "Click the login button"
+  ],
+  "testData": {
+    "raw": "password: test123"
+  },
+  "expectedResult": "Error message 'Username is required.' is shown"
+}

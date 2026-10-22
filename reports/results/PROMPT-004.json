@@ -1,0 +1,48 @@
+{
+  "id": "PROMPT-004",
+  "title": "Adding the Desk Lamp increases the cart badge to 1",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "ProductsPage.heading": "getByRole('heading', { name: 'Products' })",
+    "ProductsPage.spinner": "getByTestId('loading-spinner')",
+    "ProductsPage.searchInput": "getByTestId('search-input')",
+    "ProductsPage.sortSelect": "getByTestId('sort-select')",
+    "ProductsPage.noResultsMessage": "getByTestId('no-results-message')",
+    "ProductsPage.productCards": "locator('[data-testid^=\"product-card-\"]')",
+    "ProductsPage.productNames": "locator('[data-testid^=\"product-link-\"]')",
+    "ProductsPage.addToCartButton()": "getByTestId(`add-to-cart-${productId}`)",
+    "ProductsPage.addToBasketButton()": "getByTestId(`add-to-basket-${productId}`)",
+    "ProductsPage.removeButton()": "getByTestId(`remove-button-${productId}`)",
+    "ProductsPage.productCard()": "getByTestId(`product-card-${productId}`)",
+    "HeaderComponent.cartBadge": "getByTestId('cart-badge')",
+    "HeaderComponent.cartLink": "getByTestId('cart-link')",
+    "HeaderComponent.productsLink": "getByTestId('nav-products-link')",
+    "HeaderComponent.settingsLink": "getByTestId('nav-settings-link')",
+    "HeaderComponent.logoutButton": "getByTestId('logout-button')"
+  },
+  "script": "tests/specs/PROMPT-004.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-004-PROMPT-004-Addi-56410-creases-the-cart-badge-to-1-chromium/test-finished-1.png",
+      "trace": "test-results/PROMPT-004-PROMPT-004-Addi-56410-creases-the-cart-badge-to-1-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-004-PROMPT-004-Addi-56410-creases-the-cart-badge-to-1-firefox/test-finished-1.png",
+      "trace": "test-results/PROMPT-004-PROMPT-004-Addi-56410-creases-the-cart-badge-to-1-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-004-PROMPT-004-Addi-56410-creases-the-cart-badge-to-1-webkit/test-finished-1.png",
+      "trace": "test-results/PROMPT-004-PROMPT-004-Addi-56410-creases-the-cart-badge-to-1-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

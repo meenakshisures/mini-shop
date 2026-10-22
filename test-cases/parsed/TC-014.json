@@ -1,0 +1,17 @@
+{
+  "id": "TC-014",
+  "title": "Add product with quantity 3 from the detail page",
+  "preconditions": [
+    "User is logged in with an empty cart"
+  ],
+  "steps": [
+    "Open /products/wireless-headphones",
+    "Select quantity 3",
+    "Click 'Add to cart'",
+    "Open the cart"
+  ],
+  "testData": {
+    "raw": "Product: Wireless Headphones"
+  },
+  "expectedResult": "Message 'Added to cart.' is shown; the cart shows Wireless Headphones with quantity 3 and subtotal $239.97"
+}

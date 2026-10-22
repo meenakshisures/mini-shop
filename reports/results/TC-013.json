@@ -1,0 +1,48 @@
+{
+  "id": "TC-013",
+  "title": "Adding a product from the list updates the cart badge",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "ProductsPage.heading": "getByRole('heading', { name: 'Products' })",
+    "ProductsPage.spinner": "getByTestId('loading-spinner')",
+    "ProductsPage.searchInput": "getByTestId('search-input')",
+    "ProductsPage.sortSelect": "getByTestId('sort-select')",
+    "ProductsPage.noResultsMessage": "getByTestId('no-results-message')",
+    "ProductsPage.productCards": "locator('[data-testid^=\"product-card-\"]')",
+    "ProductsPage.productNames": "locator('[data-testid^=\"product-link-\"]')",
+    "ProductsPage.addToCartButton()": "getByTestId(`add-to-cart-${productId}`)",
+    "ProductsPage.addToBasketButton()": "getByTestId(`add-to-basket-${productId}`)",
+    "ProductsPage.removeButton()": "getByTestId(`remove-button-${productId}`)",
+    "ProductsPage.productCard()": "getByTestId(`product-card-${productId}`)",
+    "HeaderComponent.cartBadge": "getByTestId('cart-badge')",
+    "HeaderComponent.cartLink": "getByTestId('cart-link')",
+    "HeaderComponent.productsLink": "getByTestId('nav-products-link')",
+    "HeaderComponent.settingsLink": "getByTestId('nav-settings-link')",
+    "HeaderComponent.logoutButton": "getByTestId('logout-button')"
+  },
+  "script": "tests/specs/TC-013.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/TC-013-TC-013-Adding-a-pro-52c91-list-updates-the-cart-badge-chromium/test-finished-1.png",
+      "trace": "test-results/TC-013-TC-013-Adding-a-pro-52c91-list-updates-the-cart-badge-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/TC-013-TC-013-Adding-a-pro-52c91-list-updates-the-cart-badge-firefox/test-finished-1.png",
+      "trace": "test-results/TC-013-TC-013-Adding-a-pro-52c91-list-updates-the-cart-badge-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/TC-013-TC-013-Adding-a-pro-52c91-list-updates-the-cart-badge-webkit/test-finished-1.png",
+      "trace": "test-results/TC-013-TC-013-Adding-a-pro-52c91-list-updates-the-cart-badge-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "PROMPT-006",
+  "title": "Product detail quantity 2 for Wireless Mouse gives subtotal $59.98",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "ProductDetailPage.name": "getByTestId('product-name')",
+    "ProductDetailPage.price": "getByTestId('product-price')",
+    "ProductDetailPage.quantitySelect": "getByLabel('Quantity')",
+    "ProductDetailPage.addToCartButton": "getByRole('button', { name: 'Add to cart' })",
+    "ProductDetailPage.addedMessage": "getByTestId('added-message')",
+    "HeaderComponent.cartBadge": "getByTestId('cart-badge')",
+    "HeaderComponent.cartLink": "getByTestId('cart-link')",
+    "HeaderComponent.productsLink": "getByTestId('nav-products-link')",
+    "HeaderComponent.settingsLink": "getByTestId('nav-settings-link')",
+    "HeaderComponent.logoutButton": "getByTestId('logout-button')",
+    "CartPage.emptyMessage": "getByTestId('cart-empty-message')",
+    "CartPage.table": "getByTestId('cart-table')",
+    "CartPage.total": "getByTestId('cart-total')",
+    "CartPage.checkoutButton": "getByTestId('checkout-button')",
+    "CartPage.continueShoppingButton": "getByTestId('continue-shopping-button')",
+    "CartPage.row()": "getByTestId(`cart-row-${productId}`)",
+    "CartPage.quantity()": "getByTestId(`cart-qty-${productId}`)",
+    "CartPage.subtotal()": "getByTestId(`cart-subtotal-${productId}`)",
+    "CartPage.removeButton()": "getByTestId(`cart-remove-${productId}`)"
+  },
+  "script": "tests/specs/PROMPT-006.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-006-PROMPT-006-Prod-1f5e3--Mouse-gives-subtotal-59-98-chromium/test-finished-1.png",
+      "trace": "test-results/PROMPT-006-PROMPT-006-Prod-1f5e3--Mouse-gives-subtotal-59-98-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-006-PROMPT-006-Prod-1f5e3--Mouse-gives-subtotal-59-98-firefox/test-finished-1.png",
+      "trace": "test-results/PROMPT-006-PROMPT-006-Prod-1f5e3--Mouse-gives-subtotal-59-98-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-006-PROMPT-006-Prod-1f5e3--Mouse-gives-subtotal-59-98-webkit/test-finished-1.png",
+      "trace": "test-results/PROMPT-006-PROMPT-006-Prod-1f5e3--Mouse-gives-subtotal-59-98-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

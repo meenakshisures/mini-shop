@@ -1,0 +1,13 @@
+{
+  "id": "PROMPT-003",
+  "title": "Searching for mug shows only the Ceramic Mug",
+  "preconditions": [
+    "User is logged in"
+  ],
+  "steps": [
+    "Open /products",
+    "Search for mug"
+  ],
+  "testData": {},
+  "expectedResult": "Only the Ceramic Mug is listed"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "TC-006",
+  "title": "Slow user sees loading state then logs in",
+  "preconditions": [
+    "User is logged out"
+  ],
+  "steps": [
+    "Open /login",
+    "Enter username and password",
+    "Click the login button",
+    "Observe the button",
+    "Wait for navigation"
+  ],
+  "testData": {
+    "raw": "slow_user / test123"
+  },
+  "expectedResult": "Button shows 'Signing in...' while waiting and the user is redirected to /products after about 3 seconds"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "TC-013",
+  "title": "Adding a product from the list updates the cart badge",
+  "preconditions": [
+    "User is logged in with an empty cart"
+  ],
+  "steps": [
+    "Open /products and wait for load",
+    "Click 'Add to cart' on Ceramic Mug",
+    "Click 'Add to cart' on Desk Lamp"
+  ],
+  "testData": {},
+  "expectedResult": "Cart badge shows 2 and both buttons change to 'Remove'"
+}

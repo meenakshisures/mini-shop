@@ -1,0 +1,41 @@
+{
+  "id": "PROMPT-005",
+  "title": "Empty cart shows message and checkout is disabled",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "CartPage.emptyMessage": "getByTestId('cart-empty-message')",
+    "CartPage.table": "getByTestId('cart-table')",
+    "CartPage.total": "getByTestId('cart-total')",
+    "CartPage.checkoutButton": "getByTestId('checkout-button')",
+    "CartPage.continueShoppingButton": "getByTestId('continue-shopping-button')",
+    "CartPage.row()": "getByTestId(`cart-row-${productId}`)",
+    "CartPage.quantity()": "getByTestId(`cart-qty-${productId}`)",
+    "CartPage.subtotal()": "getByTestId(`cart-subtotal-${productId}`)",
+    "CartPage.removeButton()": "getByTestId(`cart-remove-${productId}`)"
+  },
+  "script": "tests/specs/PROMPT-005.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-005-PROMPT-005-Empt-1d7d7-ge-and-checkout-is-disabled-chromium/test-finished-1.png",
+      "trace": "test-results/PROMPT-005-PROMPT-005-Empt-1d7d7-ge-and-checkout-is-disabled-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-005-PROMPT-005-Empt-1d7d7-ge-and-checkout-is-disabled-firefox/test-finished-1.png",
+      "trace": "test-results/PROMPT-005-PROMPT-005-Empt-1d7d7-ge-and-checkout-is-disabled-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-005-PROMPT-005-Empt-1d7d7-ge-and-checkout-is-disabled-webkit/test-finished-1.png",
+      "trace": "test-results/PROMPT-005-PROMPT-005-Empt-1d7d7-ge-and-checkout-is-disabled-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

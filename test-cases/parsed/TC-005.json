@@ -1,0 +1,17 @@
+{
+  "id": "TC-005",
+  "title": "Login fails with empty password",
+  "preconditions": [
+    "User is logged out"
+  ],
+  "steps": [
+    "Open /login",
+    "Enter username",
+    "Leave password empty",
+    "Click the login button"
+  ],
+  "testData": {
+    "raw": "username: standard_user"
+  },
+  "expectedResult": "Error message 'Password is required.' is shown"
+}

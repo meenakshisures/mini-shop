@@ -1,0 +1,12 @@
+{
+  "id": "TC-015",
+  "title": "Empty cart shows message and disables checkout",
+  "preconditions": [
+    "User is logged in with an empty cart"
+  ],
+  "steps": [
+    "Open /cart"
+  ],
+  "testData": {},
+  "expectedResult": "Message 'Your cart is empty.' is shown and the Checkout button is disabled"
+}

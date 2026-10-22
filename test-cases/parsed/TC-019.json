@@ -1,0 +1,20 @@
+{
+  "id": "TC-019",
+  "title": "Place an order with standard shipping",
+  "preconditions": [
+    "User is logged in with Ceramic Mug in the cart and no previous orders in this session"
+  ],
+  "steps": [
+    "Open /checkout",
+    "Fill the form",
+    "Keep Standard shipping",
+    "Tick the terms checkbox",
+    "Click 'Place order'",
+    "Click Confirm in the modal",
+    "Wait for the redirect"
+  ],
+  "testData": {
+    "raw": "Jane Doe; jane.doe@example.com; 12 Main Street"
+  },
+  "expectedResult": "Button shows 'Placing order...' then the user lands on /order-success with 'Thank you for your order!' and order number ORD-0001; the order total is $14.99"
+}

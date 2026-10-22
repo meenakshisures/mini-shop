@@ -1,0 +1,17 @@
+{
+  "id": "TC-002",
+  "title": "Login fails with wrong password",
+  "preconditions": [
+    "User is logged out"
+  ],
+  "steps": [
+    "Open /login",
+    "Enter username",
+    "Enter password",
+    "Click the login button"
+  ],
+  "testData": {
+    "raw": "standard_user / wrong_pass"
+  },
+  "expectedResult": "Error message 'Invalid username or password.' is shown and the user stays on /login"
+}

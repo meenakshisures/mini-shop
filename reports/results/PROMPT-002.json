@@ -1,0 +1,37 @@
+{
+  "id": "PROMPT-002",
+  "title": "Locked user cannot log in and sees the correct error",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "LoginPage.usernameInput": "getByTestId('username-input')",
+    "LoginPage.passwordInput": "getByTestId('password-input')",
+    "LoginPage.loginButton": "getByTestId('login-button')",
+    "LoginPage.signinButton": "getByTestId('signin-button')",
+    "LoginPage.errorMessage": "getByTestId('error-message')"
+  },
+  "script": "tests/specs/PROMPT-002.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-002-PROMPT-002-Lock-ea54d--and-sees-the-correct-error-chromium/test-finished-1.png",
+      "trace": "test-results/PROMPT-002-PROMPT-002-Lock-ea54d--and-sees-the-correct-error-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-002-PROMPT-002-Lock-ea54d--and-sees-the-correct-error-firefox/test-finished-1.png",
+      "trace": "test-results/PROMPT-002-PROMPT-002-Lock-ea54d--and-sees-the-correct-error-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-002-PROMPT-002-Lock-ea54d--and-sees-the-correct-error-webkit/test-finished-1.png",
+      "trace": "test-results/PROMPT-002-PROMPT-002-Lock-ea54d--and-sees-the-correct-error-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

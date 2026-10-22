@@ -1,0 +1,12 @@
+{
+  "id": "TC-007",
+  "title": "Protected page redirects to login when logged out",
+  "preconditions": [
+    "User is logged out"
+  ],
+  "steps": [
+    "Open /cart directly"
+  ],
+  "testData": {},
+  "expectedResult": "User is redirected to /login"
+}

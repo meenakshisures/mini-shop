@@ -1,0 +1,13 @@
+{
+  "id": "TC-012",
+  "title": "Sort by price high to low",
+  "preconditions": [
+    "User is logged in and on /products"
+  ],
+  "steps": [
+    "Wait for products to load",
+    "Select 'Price high-low' in the sort dropdown"
+  ],
+  "testData": {},
+  "expectedResult": "First product is 'Wireless Headphones' ($79.99) and last product is 'Notebook Set' ($12.99)"
+}

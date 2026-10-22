@@ -1,0 +1,57 @@
+{
+  "id": "TC-020",
+  "title": "Express shipping adds 10 dollars to the total",
+  "status": "failed",
+  "knownBug": "Express shipping adds $1 instead of $10 in checkout",
+  "error": "Known app bug: Express shipping adds $1 instead of $10 in checkout. Error: expect(locator).toHaveText(expected) failed Expected: \"$24.99\" Received: \"$15.99\"",
+  "locators": {
+    "ProductsPage.heading": "getByRole('heading', { name: 'Products' })",
+    "ProductsPage.spinner": "getByTestId('loading-spinner')",
+    "ProductsPage.searchInput": "getByTestId('search-input')",
+    "ProductsPage.sortSelect": "getByTestId('sort-select')",
+    "ProductsPage.noResultsMessage": "getByTestId('no-results-message')",
+    "ProductsPage.productCards": "locator('[data-testid^=\"product-card-\"]')",
+    "ProductsPage.productNames": "locator('[data-testid^=\"product-link-\"]')",
+    "ProductsPage.addToCartButton()": "getByTestId(`add-to-cart-${productId}`)",
+    "ProductsPage.addToBasketButton()": "getByTestId(`add-to-basket-${productId}`)",
+    "ProductsPage.removeButton()": "getByTestId(`remove-button-${productId}`)",
+    "ProductsPage.productCard()": "getByTestId(`product-card-${productId}`)",
+    "CheckoutPage.fullNameInput": "getByTestId('fullname-input')",
+    "CheckoutPage.emailInput": "getByTestId('email-input')",
+    "CheckoutPage.addressInput": "getByTestId('address-input')",
+    "CheckoutPage.standardShipping": "getByTestId('shipping-standard')",
+    "CheckoutPage.expressShipping": "getByTestId('shipping-express')",
+    "CheckoutPage.termsCheckbox": "getByTestId('terms-checkbox')",
+    "CheckoutPage.placeOrderButton": "getByTestId('place-order-button')",
+    "CheckoutPage.fullNameError": "getByTestId('fullname-error')",
+    "CheckoutPage.emailError": "getByTestId('email-error')",
+    "CheckoutPage.addressError": "getByTestId('address-error')",
+    "CheckoutPage.termsError": "getByTestId('terms-error')",
+    "CheckoutPage.summaryTotal": "getByTestId('summary-total')",
+    "CheckoutPage.confirmModal": "getByTestId('confirm-modal')",
+    "CheckoutPage.confirmButton": "getByTestId('confirm-order-button')"
+  },
+  "script": "tests/specs/TC-020.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "failed",
+      "screenshot": "test-results/TC-020-TC-020-Express-shipping-adds-10-dollars-to-the-total-chromium/test-failed-1.png",
+      "trace": "test-results/TC-020-TC-020-Express-shipping-adds-10-dollars-to-the-total-chromium/trace.zip",
+      "error": "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  getByTestId('summary-total')\nExpected: \"$24.99\"\nReceived: \"$15.99\"\nTimeout:  7000ms\n\nCall log:"
+    },
+    "firefox": {
+      "status": "failed",
+      "screenshot": "test-results/TC-020-TC-020-Express-shipping-adds-10-dollars-to-the-total-firefox/test-failed-1.png",
+      "trace": "test-results/TC-020-TC-020-Express-shipping-adds-10-dollars-to-the-total-firefox/trace.zip",
+      "error": "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  getByTestId('summary-total')\nExpected: \"$24.99\"\nReceived: \"$15.99\"\nTimeout:  7000ms\n\nCall log:"
+    },
+    "webkit": {
+      "status": "failed",
+      "screenshot": "test-results/TC-020-TC-020-Express-shipping-adds-10-dollars-to-the-total-webkit/test-failed-1.png",
+      "trace": "test-results/TC-020-TC-020-Express-shipping-adds-10-dollars-to-the-total-webkit/trace.zip",
+      "error": "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  getByTestId('summary-total')\nExpected: \"$24.99\"\nReceived: \"$15.99\"\nTimeout:  7000ms\n\nCall log:"
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

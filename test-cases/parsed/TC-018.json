@@ -1,0 +1,18 @@
+{
+  "id": "TC-018",
+  "title": "Checkout rejects an invalid email",
+  "preconditions": [
+    "User is logged in with Ceramic Mug in the cart"
+  ],
+  "steps": [
+    "Open /checkout",
+    "Fill full name and address",
+    "Enter an invalid email",
+    "Tick the terms checkbox",
+    "Click 'Place order'"
+  ],
+  "testData": {
+    "raw": "Jane Doe; jane.doe@; 12 Main Street"
+  },
+  "expectedResult": "Message 'Enter a valid email address.' is shown and no confirm modal opens"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "TC-009",
+  "title": "Search filters the product list",
+  "preconditions": [
+    "User is logged in and on /products"
+  ],
+  "steps": [
+    "Wait for products to load",
+    "Type in the search box"
+  ],
+  "testData": {
+    "search": "wireless"
+  },
+  "expectedResult": "Only 'Wireless Headphones' and 'Wireless Mouse' are listed"
+}

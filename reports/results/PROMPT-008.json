@@ -1,0 +1,43 @@
+{
+  "id": "PROMPT-008",
+  "title": "Sorting by Price high-low shows the most expensive product first",
+  "status": "failed",
+  "knownBug": "Sort \"Price high-low\" places the most expensive item last instead of first",
+  "error": "Known app bug: Sort \"Price high-low\" places the most expensive item last instead of first. Error: expect(locator).toHaveText(expected) failed Expected: \"Wireless Headphones\" Received: \"Everyday Backpack\"",
+  "locators": {
+    "ProductsPage.heading": "getByRole('heading', { name: 'Products' })",
+    "ProductsPage.spinner": "getByTestId('loading-spinner')",
+    "ProductsPage.searchInput": "getByTestId('search-input')",
+    "ProductsPage.sortSelect": "getByTestId('sort-select')",
+    "ProductsPage.noResultsMessage": "getByTestId('no-results-message')",
+    "ProductsPage.productCards": "locator('[data-testid^=\"product-card-\"]')",
+    "ProductsPage.productNames": "locator('[data-testid^=\"product-link-\"]')",
+    "ProductsPage.addToCartButton()": "getByTestId(`add-to-cart-${productId}`)",
+    "ProductsPage.addToBasketButton()": "getByTestId(`add-to-basket-${productId}`)",
+    "ProductsPage.removeButton()": "getByTestId(`remove-button-${productId}`)",
+    "ProductsPage.productCard()": "getByTestId(`product-card-${productId}`)"
+  },
+  "script": "tests/specs/PROMPT-008.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "failed",
+      "screenshot": "test-results/PROMPT-008-PROMPT-008-Sort-2f1b4-ost-expensive-product-first-chromium/test-failed-1.png",
+      "trace": "test-results/PROMPT-008-PROMPT-008-Sort-2f1b4-ost-expensive-product-first-chromium/trace.zip",
+      "error": "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  locator('[data-testid^=\"product-link-\"]').first()\nExpected: \"Wireless Headphones\"\nReceived: \"Everyday Backpack\"\nTimeout:  7000ms\n\nCall log:"
+    },
+    "firefox": {
+      "status": "failed",
+      "screenshot": "test-results/PROMPT-008-PROMPT-008-Sort-2f1b4-ost-expensive-product-first-firefox/test-failed-1.png",
+      "trace": "test-results/PROMPT-008-PROMPT-008-Sort-2f1b4-ost-expensive-product-first-firefox/trace.zip",
+      "error": "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  locator('[data-testid^=\"product-link-\"]').first()\nExpected: \"Wireless Headphones\"\nReceived: \"Everyday Backpack\"\nTimeout:  7000ms\n\nCall log:"
+    },
+    "webkit": {
+      "status": "failed",
+      "screenshot": "test-results/PROMPT-008-PROMPT-008-Sort-2f1b4-ost-expensive-product-first-webkit/test-failed-1.png",
+      "trace": "test-results/PROMPT-008-PROMPT-008-Sort-2f1b4-ost-expensive-product-first-webkit/trace.zip",
+      "error": "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  locator('[data-testid^=\"product-link-\"]').first()\nExpected: \"Wireless Headphones\"\nReceived: \"Everyday Backpack\"\nTimeout:  7000ms\n\nCall log:"
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

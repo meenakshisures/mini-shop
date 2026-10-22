@@ -1,0 +1,13 @@
+{
+  "id": "PROMPT-008",
+  "title": "Sorting by Price high-low shows the most expensive product first",
+  "preconditions": [
+    "User is logged in"
+  ],
+  "steps": [
+    "Open /products",
+    "Select Price high-low"
+  ],
+  "testData": {},
+  "expectedResult": "The most expensive product is listed first"
+}

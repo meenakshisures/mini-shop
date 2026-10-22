@@ -1,0 +1,15 @@
+{
+  "id": "PROMPT-006",
+  "title": "Product detail quantity 2 for Wireless Mouse gives subtotal $59.98",
+  "preconditions": [
+    "User is logged in with an empty cart"
+  ],
+  "steps": [
+    "Open the Wireless Mouse detail page",
+    "Choose quantity 2",
+    "Add to cart",
+    "Open the cart"
+  ],
+  "testData": {},
+  "expectedResult": "The cart shows a subtotal of $59.98"
+}

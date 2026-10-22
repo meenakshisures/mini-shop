@@ -1,0 +1,13 @@
+{
+  "id": "TC-017",
+  "title": "Checkout shows validation errors for empty form",
+  "preconditions": [
+    "User is logged in with Ceramic Mug in the cart"
+  ],
+  "steps": [
+    "Open /checkout",
+    "Click 'Place order' without filling anything"
+  ],
+  "testData": {},
+  "expectedResult": "Messages 'Full name is required.' 'Email is required.' 'Address is required.' and 'You must accept the terms.' are shown"
+}

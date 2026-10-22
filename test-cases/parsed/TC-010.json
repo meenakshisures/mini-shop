@@ -1,0 +1,15 @@
+{
+  "id": "TC-010",
+  "title": "Search with no match shows empty message",
+  "preconditions": [
+    "User is logged in and on /products"
+  ],
+  "steps": [
+    "Wait for products to load",
+    "Type in the search box"
+  ],
+  "testData": {
+    "raw": "search: zzz"
+  },
+  "expectedResult": "Message 'No products found.' is shown and no products are listed"
+}

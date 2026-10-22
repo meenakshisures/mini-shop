@@ -1,0 +1,35 @@
+{
+  "id": "PROMPT-010",
+  "title": "Resetting app data shows a toast and logs the user out",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "SettingsPage.resetButton": "getByTestId('reset-data-button')",
+    "SettingsPage.logoutButton": "getByTestId('settings-logout-button')",
+    "SettingsPage.toast": "getByTestId('toast')"
+  },
+  "script": "tests/specs/PROMPT-010.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-010-PROMPT-010-Rese-b1e1c-toast-and-logs-the-user-out-chromium/test-finished-1.png",
+      "trace": "test-results/PROMPT-010-PROMPT-010-Rese-b1e1c-toast-and-logs-the-user-out-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-010-PROMPT-010-Rese-b1e1c-toast-and-logs-the-user-out-firefox/test-finished-1.png",
+      "trace": "test-results/PROMPT-010-PROMPT-010-Rese-b1e1c-toast-and-logs-the-user-out-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-010-PROMPT-010-Rese-b1e1c-toast-and-logs-the-user-out-webkit/test-finished-1.png",
+      "trace": "test-results/PROMPT-010-PROMPT-010-Rese-b1e1c-toast-and-logs-the-user-out-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

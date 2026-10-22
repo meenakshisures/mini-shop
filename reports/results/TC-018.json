@@ -1,0 +1,57 @@
+{
+  "id": "TC-018",
+  "title": "Checkout rejects an invalid email",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "ProductsPage.heading": "getByRole('heading', { name: 'Products' })",
+    "ProductsPage.spinner": "getByTestId('loading-spinner')",
+    "ProductsPage.searchInput": "getByTestId('search-input')",
+    "ProductsPage.sortSelect": "getByTestId('sort-select')",
+    "ProductsPage.noResultsMessage": "getByTestId('no-results-message')",
+    "ProductsPage.productCards": "locator('[data-testid^=\"product-card-\"]')",
+    "ProductsPage.productNames": "locator('[data-testid^=\"product-link-\"]')",
+    "ProductsPage.addToCartButton()": "getByTestId(`add-to-cart-${productId}`)",
+    "ProductsPage.addToBasketButton()": "getByTestId(`add-to-basket-${productId}`)",
+    "ProductsPage.removeButton()": "getByTestId(`remove-button-${productId}`)",
+    "ProductsPage.productCard()": "getByTestId(`product-card-${productId}`)",
+    "CheckoutPage.fullNameInput": "getByTestId('fullname-input')",
+    "CheckoutPage.emailInput": "getByTestId('email-input')",
+    "CheckoutPage.addressInput": "getByTestId('address-input')",
+    "CheckoutPage.standardShipping": "getByTestId('shipping-standard')",
+    "CheckoutPage.expressShipping": "getByTestId('shipping-express')",
+    "CheckoutPage.termsCheckbox": "getByTestId('terms-checkbox')",
+    "CheckoutPage.placeOrderButton": "getByTestId('place-order-button')",
+    "CheckoutPage.fullNameError": "getByTestId('fullname-error')",
+    "CheckoutPage.emailError": "getByTestId('email-error')",
+    "CheckoutPage.addressError": "getByTestId('address-error')",
+    "CheckoutPage.termsError": "getByTestId('terms-error')",
+    "CheckoutPage.summaryTotal": "getByTestId('summary-total')",
+    "CheckoutPage.confirmModal": "getByTestId('confirm-modal')",
+    "CheckoutPage.confirmButton": "getByTestId('confirm-order-button')"
+  },
+  "script": "tests/specs/TC-018.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/TC-018-TC-018-Checkout-rejects-an-invalid-email-chromium/test-finished-1.png",
+      "trace": "test-results/TC-018-TC-018-Checkout-rejects-an-invalid-email-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/TC-018-TC-018-Checkout-rejects-an-invalid-email-firefox/test-finished-1.png",
+      "trace": "test-results/TC-018-TC-018-Checkout-rejects-an-invalid-email-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/TC-018-TC-018-Checkout-rejects-an-invalid-email-webkit/test-finished-1.png",
+      "trace": "test-results/TC-018-TC-018-Checkout-rejects-an-invalid-email-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

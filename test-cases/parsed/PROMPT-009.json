@@ -1,0 +1,13 @@
+{
+  "id": "PROMPT-009",
+  "title": "Login works with the v2 UI Sign in button",
+  "preconditions": [
+    "User is logged out"
+  ],
+  "steps": [
+    "Open /login?ui=v2",
+    "Log in as standard_user using the Sign in button"
+  ],
+  "testData": {},
+  "expectedResult": "User is redirected to /products"
+}

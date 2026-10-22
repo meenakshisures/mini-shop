@@ -1,0 +1,41 @@
+{
+  "id": "TC-015",
+  "title": "Empty cart shows message and disables checkout",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "CartPage.emptyMessage": "getByTestId('cart-empty-message')",
+    "CartPage.table": "getByTestId('cart-table')",
+    "CartPage.total": "getByTestId('cart-total')",
+    "CartPage.checkoutButton": "getByTestId('checkout-button')",
+    "CartPage.continueShoppingButton": "getByTestId('continue-shopping-button')",
+    "CartPage.row()": "getByTestId(`cart-row-${productId}`)",
+    "CartPage.quantity()": "getByTestId(`cart-qty-${productId}`)",
+    "CartPage.subtotal()": "getByTestId(`cart-subtotal-${productId}`)",
+    "CartPage.removeButton()": "getByTestId(`cart-remove-${productId}`)"
+  },
+  "script": "tests/specs/TC-015.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/TC-015-TC-015-Empty-cart-shows-message-and-disables-checkout-chromium/test-finished-1.png",
+      "trace": "test-results/TC-015-TC-015-Empty-cart-shows-message-and-disables-checkout-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/TC-015-TC-015-Empty-cart-shows-message-and-disables-checkout-firefox/test-finished-1.png",
+      "trace": "test-results/TC-015-TC-015-Empty-cart-shows-message-and-disables-checkout-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/TC-015-TC-015-Empty-cart-shows-message-and-disables-checkout-webkit/test-finished-1.png",
+      "trace": "test-results/TC-015-TC-015-Empty-cart-shows-message-and-disables-checkout-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

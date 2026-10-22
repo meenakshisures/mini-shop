@@ -1,0 +1,13 @@
+{
+  "id": "TC-021",
+  "title": "Reset app data clears state and logs out",
+  "preconditions": [
+    "User is logged in with an item in the cart"
+  ],
+  "steps": [
+    "Open /settings",
+    "Click 'Reset app data'"
+  ],
+  "testData": {},
+  "expectedResult": "Toast 'App data has been reset.' is shown; the user is logged out and the cart is empty after logging back in"
+}

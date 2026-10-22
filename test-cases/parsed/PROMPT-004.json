@@ -1,0 +1,13 @@
+{
+  "id": "PROMPT-004",
+  "title": "Adding the Desk Lamp increases the cart badge to 1",
+  "preconditions": [
+    "User is logged in with an empty cart"
+  ],
+  "steps": [
+    "Open /products",
+    "Add the Desk Lamp to the cart"
+  ],
+  "testData": {},
+  "expectedResult": "Cart badge shows 1"
+}

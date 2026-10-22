@@ -1,0 +1,13 @@
+{
+  "id": "TC-008",
+  "title": "Products load after the spinner",
+  "preconditions": [
+    "User is logged in as standard_user"
+  ],
+  "steps": [
+    "Open /products",
+    "Wait for the loading spinner to disappear"
+  ],
+  "testData": {},
+  "expectedResult": "Loading spinner disappears and 8 products are listed"
+}

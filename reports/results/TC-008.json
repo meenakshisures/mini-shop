@@ -1,0 +1,43 @@
+{
+  "id": "TC-008",
+  "title": "Products load after the spinner",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "ProductsPage.heading": "getByRole('heading', { name: 'Products' })",
+    "ProductsPage.spinner": "getByTestId('loading-spinner')",
+    "ProductsPage.searchInput": "getByTestId('search-input')",
+    "ProductsPage.sortSelect": "getByTestId('sort-select')",
+    "ProductsPage.noResultsMessage": "getByTestId('no-results-message')",
+    "ProductsPage.productCards": "locator('[data-testid^=\"product-card-\"]')",
+    "ProductsPage.productNames": "locator('[data-testid^=\"product-link-\"]')",
+    "ProductsPage.addToCartButton()": "getByTestId(`add-to-cart-${productId}`)",
+    "ProductsPage.addToBasketButton()": "getByTestId(`add-to-basket-${productId}`)",
+    "ProductsPage.removeButton()": "getByTestId(`remove-button-${productId}`)",
+    "ProductsPage.productCard()": "getByTestId(`product-card-${productId}`)"
+  },
+  "script": "tests/specs/TC-008.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/TC-008-TC-008-Products-load-after-the-spinner-chromium/test-finished-1.png",
+      "trace": "test-results/TC-008-TC-008-Products-load-after-the-spinner-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/TC-008-TC-008-Products-load-after-the-spinner-firefox/test-finished-1.png",
+      "trace": "test-results/TC-008-TC-008-Products-load-after-the-spinner-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/TC-008-TC-008-Products-load-after-the-spinner-webkit/test-finished-1.png",
+      "trace": "test-results/TC-008-TC-008-Products-load-after-the-spinner-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

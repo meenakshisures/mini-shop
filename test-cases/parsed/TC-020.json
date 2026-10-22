@@ -1,0 +1,16 @@
+{
+  "id": "TC-020",
+  "title": "Express shipping adds 10 dollars to the total",
+  "preconditions": [
+    "User is logged in with Ceramic Mug in the cart"
+  ],
+  "steps": [
+    "Open /checkout",
+    "Select Express shipping",
+    "Read the order total"
+  ],
+  "testData": {
+    "raw": "Ceramic Mug $14.99"
+  },
+  "expectedResult": "Order total is $24.99 (item price plus $10.00 express shipping)"
+}

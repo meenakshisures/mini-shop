@@ -1,0 +1,48 @@
+{
+  "id": "TC-001",
+  "title": "Login succeeds with valid credentials",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "LoginPage.usernameInput": "getByTestId('username-input')",
+    "LoginPage.passwordInput": "getByTestId('password-input')",
+    "LoginPage.loginButton": "getByTestId('login-button')",
+    "LoginPage.signinButton": "getByTestId('signin-button')",
+    "LoginPage.errorMessage": "getByTestId('error-message')",
+    "ProductsPage.heading": "getByRole('heading', { name: 'Products' })",
+    "ProductsPage.spinner": "getByTestId('loading-spinner')",
+    "ProductsPage.searchInput": "getByTestId('search-input')",
+    "ProductsPage.sortSelect": "getByTestId('sort-select')",
+    "ProductsPage.noResultsMessage": "getByTestId('no-results-message')",
+    "ProductsPage.productCards": "locator('[data-testid^=\"product-card-\"]')",
+    "ProductsPage.productNames": "locator('[data-testid^=\"product-link-\"]')",
+    "ProductsPage.addToCartButton()": "getByTestId(`add-to-cart-${productId}`)",
+    "ProductsPage.addToBasketButton()": "getByTestId(`add-to-basket-${productId}`)",
+    "ProductsPage.removeButton()": "getByTestId(`remove-button-${productId}`)",
+    "ProductsPage.productCard()": "getByTestId(`product-card-${productId}`)"
+  },
+  "script": "tests/specs/TC-001.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/TC-001-TC-001-Login-succeeds-with-valid-credentials-chromium/test-finished-1.png",
+      "trace": "test-results/TC-001-TC-001-Login-succeeds-with-valid-credentials-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/TC-001-TC-001-Login-succeeds-with-valid-credentials-firefox/test-finished-1.png",
+      "trace": "test-results/TC-001-TC-001-Login-succeeds-with-valid-credentials-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/TC-001-TC-001-Login-succeeds-with-valid-credentials-webkit/test-finished-1.png",
+      "trace": "test-results/TC-001-TC-001-Login-succeeds-with-valid-credentials-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

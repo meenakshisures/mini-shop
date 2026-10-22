@@ -1,0 +1,37 @@
+{
+  "id": "TC-002",
+  "title": "Login fails with wrong password",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "LoginPage.usernameInput": "getByTestId('username-input')",
+    "LoginPage.passwordInput": "getByTestId('password-input')",
+    "LoginPage.loginButton": "getByTestId('login-button')",
+    "LoginPage.signinButton": "getByTestId('signin-button')",
+    "LoginPage.errorMessage": "getByTestId('error-message')"
+  },
+  "script": "tests/specs/TC-002.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/TC-002-TC-002-Login-fails-with-wrong-password-chromium/test-finished-1.png",
+      "trace": "test-results/TC-002-TC-002-Login-fails-with-wrong-password-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/TC-002-TC-002-Login-fails-with-wrong-password-firefox/test-finished-1.png",
+      "trace": "test-results/TC-002-TC-002-Login-fails-with-wrong-password-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/TC-002-TC-002-Login-fails-with-wrong-password-webkit/test-finished-1.png",
+      "trace": "test-results/TC-002-TC-002-Login-fails-with-wrong-password-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

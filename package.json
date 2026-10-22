@@ -7,7 +7,15 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:watch": "playwright test -c playwright.watch.config.ts",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "report": "playwright show-report",
+    "parse:csv": "node scripts/parse-csv.mjs",
+    "reports": "node scripts/build-reports.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",

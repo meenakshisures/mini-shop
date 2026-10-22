@@ -1,0 +1,51 @@
+{
+  "id": "TC-014",
+  "title": "Add product with quantity 3 from the detail page",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "ProductDetailPage.name": "getByTestId('product-name')",
+    "ProductDetailPage.price": "getByTestId('product-price')",
+    "ProductDetailPage.quantitySelect": "getByLabel('Quantity')",
+    "ProductDetailPage.addToCartButton": "getByRole('button', { name: 'Add to cart' })",
+    "ProductDetailPage.addedMessage": "getByTestId('added-message')",
+    "HeaderComponent.cartBadge": "getByTestId('cart-badge')",
+    "HeaderComponent.cartLink": "getByTestId('cart-link')",
+    "HeaderComponent.productsLink": "getByTestId('nav-products-link')",
+    "HeaderComponent.settingsLink": "getByTestId('nav-settings-link')",
+    "HeaderComponent.logoutButton": "getByTestId('logout-button')",
+    "CartPage.emptyMessage": "getByTestId('cart-empty-message')",
+    "CartPage.table": "getByTestId('cart-table')",
+    "CartPage.total": "getByTestId('cart-total')",
+    "CartPage.checkoutButton": "getByTestId('checkout-button')",
+    "CartPage.continueShoppingButton": "getByTestId('continue-shopping-button')",
+    "CartPage.row()": "getByTestId(`cart-row-${productId}`)",
+    "CartPage.quantity()": "getByTestId(`cart-qty-${productId}`)",
+    "CartPage.subtotal()": "getByTestId(`cart-subtotal-${productId}`)",
+    "CartPage.removeButton()": "getByTestId(`cart-remove-${productId}`)"
+  },
+  "script": "tests/specs/TC-014.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/TC-014-TC-014-Add-product--00410-tity-3-from-the-detail-page-chromium/test-finished-1.png",
+      "trace": "test-results/TC-014-TC-014-Add-product--00410-tity-3-from-the-detail-page-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/TC-014-TC-014-Add-product--00410-tity-3-from-the-detail-page-firefox/test-finished-1.png",
+      "trace": "test-results/TC-014-TC-014-Add-product--00410-tity-3-from-the-detail-page-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/TC-014-TC-014-Add-product--00410-tity-3-from-the-detail-page-webkit/test-finished-1.png",
+      "trace": "test-results/TC-014-TC-014-Add-product--00410-tity-3-from-the-detail-page-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "PROMPT-002",
+  "title": "Locked user cannot log in and sees the correct error",
+  "preconditions": [
+    "User is logged out"
+  ],
+  "steps": [
+    "Open /login",
+    "Log in as locked_user"
+  ],
+  "testData": {},
+  "expectedResult": "This user has been locked out. is shown"
+}

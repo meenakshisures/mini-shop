@@ -1,0 +1,16 @@
+{
+  "id": "TC-022",
+  "title": "UI v2 login button is renamed",
+  "preconditions": [
+    "User is logged out"
+  ],
+  "steps": [
+    "Open /login?ui=v2",
+    "Enter username and password",
+    "Click the sign-in button"
+  ],
+  "testData": {
+    "raw": "standard_user / test123"
+  },
+  "expectedResult": "Button is labelled 'Sign in' and the user is redirected to /products"
+}

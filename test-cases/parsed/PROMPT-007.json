@@ -1,0 +1,16 @@
+{
+  "id": "PROMPT-007",
+  "title": "Checkout with standard shipping shows an order number",
+  "preconditions": [
+    "User is logged in with an item in the cart"
+  ],
+  "steps": [
+    "Open /checkout",
+    "Fill the form",
+    "Keep Standard shipping",
+    "Accept terms",
+    "Place and confirm the order"
+  ],
+  "testData": {},
+  "expectedResult": "The success page shows an order number"
+}

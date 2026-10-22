@@ -1,0 +1,31 @@
+{
+  "id": "TC-007",
+  "title": "Protected page redirects to login when logged out",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {},
+  "script": "tests/specs/TC-007.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/TC-007-TC-007-Protected-pa-32720-ts-to-login-when-logged-out-chromium/test-finished-1.png",
+      "trace": "test-results/TC-007-TC-007-Protected-pa-32720-ts-to-login-when-logged-out-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/TC-007-TC-007-Protected-pa-32720-ts-to-login-when-logged-out-firefox/test-finished-1.png",
+      "trace": "test-results/TC-007-TC-007-Protected-pa-32720-ts-to-login-when-logged-out-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/TC-007-TC-007-Protected-pa-32720-ts-to-login-when-logged-out-webkit/test-finished-1.png",
+      "trace": "test-results/TC-007-TC-007-Protected-pa-32720-ts-to-login-when-logged-out-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

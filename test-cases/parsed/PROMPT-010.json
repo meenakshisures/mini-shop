@@ -1,0 +1,13 @@
+{
+  "id": "PROMPT-010",
+  "title": "Resetting app data shows a toast and logs the user out",
+  "preconditions": [
+    "User is logged in"
+  ],
+  "steps": [
+    "Open /settings",
+    "Click Reset app data"
+  ],
+  "testData": {},
+  "expectedResult": "Toast App data has been reset. is shown and the user is logged out"
+}

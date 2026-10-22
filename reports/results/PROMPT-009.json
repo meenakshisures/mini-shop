@@ -1,0 +1,37 @@
+{
+  "id": "PROMPT-009",
+  "title": "Login works with the v2 UI Sign in button",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "LoginPage.usernameInput": "getByTestId('username-input')",
+    "LoginPage.passwordInput": "getByTestId('password-input')",
+    "LoginPage.loginButton": "getByTestId('login-button')",
+    "LoginPage.signinButton": "getByTestId('signin-button')",
+    "LoginPage.errorMessage": "getByTestId('error-message')"
+  },
+  "script": "tests/specs/PROMPT-009.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-009-PROMPT-009-Logi-c81c6-th-the-v2-UI-Sign-in-button-chromium/test-finished-1.png",
+      "trace": "test-results/PROMPT-009-PROMPT-009-Logi-c81c6-th-the-v2-UI-Sign-in-button-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-009-PROMPT-009-Logi-c81c6-th-the-v2-UI-Sign-in-button-firefox/test-finished-1.png",
+      "trace": "test-results/PROMPT-009-PROMPT-009-Logi-c81c6-th-the-v2-UI-Sign-in-button-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-009-PROMPT-009-Logi-c81c6-th-the-v2-UI-Sign-in-button-webkit/test-finished-1.png",
+      "trace": "test-results/PROMPT-009-PROMPT-009-Logi-c81c6-th-the-v2-UI-Sign-in-button-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": []
+}

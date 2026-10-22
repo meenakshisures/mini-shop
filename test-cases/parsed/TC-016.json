@@ -1,0 +1,15 @@
+{
+  "id": "TC-016",
+  "title": "Removing an item updates the cart total",
+  "preconditions": [
+    "User is logged in with Ceramic Mug and Desk Lamp in the cart"
+  ],
+  "steps": [
+    "Open /cart",
+    "Click Remove on Ceramic Mug"
+  ],
+  "testData": {
+    "raw": "Ceramic Mug $14.99; Desk Lamp $39.99"
+  },
+  "expectedResult": "Only Desk Lamp remains and the total is $39.99"
+}

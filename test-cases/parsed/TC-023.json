@@ -1,0 +1,13 @@
+{
+  "id": "TC-023",
+  "title": "UI v2 add to basket from the product list",
+  "preconditions": [
+    "User is logged in with UI version v2 and an empty cart"
+  ],
+  "steps": [
+    "Open /products and wait for load (about 4 seconds)",
+    "Click 'Add to basket' on Ceramic Mug"
+  ],
+  "testData": {},
+  "expectedResult": "Cart badge shows 1"
+}

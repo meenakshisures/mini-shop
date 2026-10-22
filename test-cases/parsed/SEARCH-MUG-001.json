@@ -1,0 +1,15 @@
+{
+  "id": "SEARCH-MUG-001",
+  "title": "Searching for mug shows only the Ceramic Mug",
+  "preconditions": [
+    "User is logged in"
+  ],
+  "steps": [
+    "Open /products",
+    "Enter \"mug\" in the Search products field"
+  ],
+  "testData": {
+    "search": "mug"
+  },
+  "expectedResult": "Only the Ceramic Mug is displayed."
+}

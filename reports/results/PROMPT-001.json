@@ -2,15 +2,36 @@
   "id": "PROMPT-001",
   "title": "Login fails with an invalid password",
   "status": "passed",
-  "attempts": [
-    {
-      "attempt": 1,
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "LoginPage.usernameInput": "getByTestId('username-input')",
+    "LoginPage.passwordInput": "getByTestId('password-input')",
+    "LoginPage.loginButton": "getByTestId('login-button')",
+    "LoginPage.signinButton": "getByTestId('signin-button')",
+    "LoginPage.errorMessage": "getByTestId('error-message')"
+  },
+  "script": "tests/specs/PROMPT-001.spec.ts",
+  "browsers": {
+    "chromium": {
       "status": "passed",
-      "command": "npx playwright test tests/specs/PROMPT-001.spec.ts",
+      "screenshot": "test-results/PROMPT-001-PROMPT-001-Login-fails-with-an-invalid-password-chromium/test-finished-1.png",
+      "trace": "test-results/PROMPT-001-PROMPT-001-Login-fails-with-an-invalid-password-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-001-PROMPT-001-Login-fails-with-an-invalid-password-firefox/test-finished-1.png",
+      "trace": "test-results/PROMPT-001-PROMPT-001-Login-fails-with-an-invalid-password-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/PROMPT-001-PROMPT-001-Login-fails-with-an-invalid-password-webkit/test-finished-1.png",
+      "trace": "test-results/PROMPT-001-PROMPT-001-Login-fails-with-an-invalid-password-webkit/trace.zip",
       "error": null
     }
-  ],
-  "error": null,
-  "screenshot": null,
-  "trace": null
+  },
+  "attempts": 1,
+  "attemptLog": []
 }

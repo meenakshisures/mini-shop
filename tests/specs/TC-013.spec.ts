@@ -1,0 +1,14 @@
+import { expect, test } from '@playwright/test'
+import { ProductsPage } from '../pages/ProductsPage'
+import { HeaderComponent } from '../pages/HeaderComponent'
+
+test('TC-013: Adding a product from the list updates the cart badge', async ({ page }) => {
+  const productsPage = new ProductsPage(page)
+  const header = new HeaderComponent(page)
+
+  await productsPage.addItemsToBasket('ceramic-mug', 'desk-lamp')
+
+  await expect(header.cartBadge).toHaveText('2')
+  await expect(productsPage.removeButton('ceramic-mug')).toHaveText('Remove')
+  await expect(productsPage.removeButton('desk-lamp')).toHaveText('Remove')
+})

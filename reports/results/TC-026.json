@@ -1,0 +1,70 @@
+{
+  "id": "TC-026",
+  "title": "Search item, add to cart, and clear search",
+  "status": "failed",
+  "knownBug": null,
+  "error": "Test timeout of 30000ms exceeded while setting up \"page\".",
+  "locators": {
+    "HeaderComponent.cartBadge": "getByTestId('cart-badge')",
+    "HeaderComponent.cartLink": "getByTestId('cart-link')",
+    "HeaderComponent.productsLink": "getByTestId('nav-products-link')",
+    "HeaderComponent.settingsLink": "getByTestId('nav-settings-link')",
+    "HeaderComponent.logoutButton": "getByTestId('logout-button')",
+    "ProductsPage.heading": "getByRole('heading', { name: 'Products' })",
+    "ProductsPage.spinner": "getByTestId('loading-spinner')",
+    "ProductsPage.searchInput": "getByTestId('search-input')",
+    "ProductsPage.sortSelect": "getByTestId('sort-select')",
+    "ProductsPage.noResultsMessage": "getByTestId('no-results-message')",
+    "ProductsPage.productCards": "locator('[data-testid^=\"product-card-\"]')",
+    "ProductsPage.productNames": "locator('[data-testid^=\"product-link-\"]')",
+    "ProductsPage.addToCartButton()": "getByTestId(`add-to-cart-${productId}`)",
+    "ProductsPage.addToBasketButton()": "getByTestId(`add-to-basket-${productId}`)",
+    "ProductsPage.removeButton()": "getByTestId(`remove-button-${productId}`)",
+    "ProductsPage.productCard()": "getByTestId(`product-card-${productId}`)"
+  },
+  "script": "tests/specs/TC-026.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "failed",
+      "screenshot": "test-results/TC-026-TC-026-Search-item-add-to-cart-and-clear-search-chromium/test-failed-1.png",
+      "trace": "test-results/TC-026-TC-026-Search-item-add-to-cart-and-clear-search-chromium/trace.zip",
+      "error": "Test timeout of 30000ms exceeded while setting up \"page\"."
+    },
+    "firefox": {
+      "status": "failed",
+      "screenshot": "test-results/TC-026-TC-026-Search-item-add-to-cart-and-clear-search-firefox/test-failed-1.png",
+      "trace": "test-results/TC-026-TC-026-Search-item-add-to-cart-and-clear-search-firefox/trace.zip",
+      "error": "Test timeout of 30000ms exceeded."
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/TC-026-TC-026-Search-item-add-to-cart-and-clear-search-webkit/test-finished-1.png",
+      "trace": "test-results/TC-026-TC-026-Search-item-add-to-cart-and-clear-search-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 3,
+  "attemptLog": [
+    {
+      "attempt": 1,
+      "classification": "timing problem",
+      "command": "npx playwright test tests/specs/TC-026.spec.ts",
+      "change": "No change.",
+      "reason": "Authentication setup timed out while setting up the Playwright page at 30 seconds, before TC-026 ran."
+    },
+    {
+      "attempt": 2,
+      "classification": "timing problem",
+      "command": "npx playwright test tests/specs/TC-026.spec.ts --project=chromium --workers=1",
+      "change": "No change.",
+      "reason": "Authentication setup and TC-026 passed in the isolated Chromium project."
+    },
+    {
+      "attempt": 3,
+      "classification": "timing problem",
+      "command": "npx playwright test tests/specs/TC-026.spec.ts",
+      "change": "No change.",
+      "reason": "Chromium timed out while setting up the page and Firefox timed out during navigation to /products; WebKit passed. Both failures occurred at the 30-second timeout."
+    }
+  ]
+}

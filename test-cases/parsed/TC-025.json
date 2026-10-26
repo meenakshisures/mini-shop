@@ -1,0 +1,15 @@
+{
+  "id": "TC-025",
+  "title": "Verify Case-insensitive search and clear",
+  "preconditions": [
+    "User is logged in on /products"
+  ],
+  "steps": [
+    "Type 'MUG' in search box.",
+    "Clear search box."
+  ],
+  "testData": {
+    "search": "MUG"
+  },
+  "expectedResult": "'Ceramic Mug' is displayed regardless of uppercase input, and clearing the box restores all 8 products."
+}

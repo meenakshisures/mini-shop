@@ -15,6 +15,7 @@ function walk(suite) {
     const id = spec.file.replace(/^.*[\\/]/, '').replace('.spec.ts', '')
     for (const t of spec.tests) {
       const result = t.results[t.results.length - 1]
+      if (!result) continue
       const entry = cases.get(id) ?? { id, title: spec.title.replace(/^[A-Z]+-\d+: /, ''), file: spec.file, browsers: {}, attempts: 0, knownBug: null }
       const attachments = result.attachments ?? []
       const path = (name) => attachments.find((a) => a.name === name)?.path
@@ -56,7 +57,7 @@ function locatorsFor(specFile) {
   const out = {}
   for (const [, page] of src.matchAll(/from '\.\.\/pages\/(\w+)'/g)) {
     const code = readFileSync(`tests/pages/${page}.ts`, 'utf8')
-    for (const [, name, locator] of code.matchAll(/this\.(\w+) = (page\.[^\n]+)/g)) out[`${page}.${name}`] = locator.replace(/^page\./, '')
+    for (const [, name, locator] of code.matchAll(/this\.(\w+) = (page\.[^\n]+)/g)) out[`${page}.${name}`] = locator.replace(/^page\./, '').trim()
     for (const [, name, locator] of code.matchAll(/(\w+)\([^)]*\) \{\s*return this\.page\.(get\w+\([^\n]+\))/g)) out[`${page}.${name}()`] = locator
   }
   return out
@@ -77,16 +78,18 @@ for (const c of [...cases.values()].sort((a, b) => a.id.localeCompare(b.id, unde
   const failed = BROWSERS.filter((b) => c.browsers[b]?.status === 'failed')
   const status = failed.length ? 'failed' : 'passed'
   const firstError = failed.length ? c.browsers[failed[0]].error : null
+  const errorSummary = firstError?.split('\n').filter((line) => /Expected|Received|Error|timeout/i.test(line)).join(' ').replace(/\s+/g, ' ')
   const reason = failed.length
-    ? `${c.knownBug ? `Known app bug: ${c.knownBug}. ` : ''}${firstError.split('\n').filter((l) => /Expected|Received|Error/.test(l)).join(' ').replace(/\s+/g, ' ')}`
+    ? `${c.knownBug ? `Known app bug: ${c.knownBug}. ` : ''}${errorSummary || firstError}`
     : null
   const old = existsSync(`reports/results/${c.id}.json`) ? JSON.parse(readFileSync(`reports/results/${c.id}.json`, 'utf8')) : {}
   const attemptLog = old.attemptLog ?? []
+  const attempts = Math.max(c.attempts, attemptLog.length)
   writeFileSync(
     `reports/results/${c.id}.json`,
-    JSON.stringify({ id: c.id, title: c.title, status, knownBug: c.knownBug, error: reason, locators: locatorsFor(c.file), script: rel(c.file.startsWith('tests') ? c.file : `tests/specs/${c.file}`), browsers: c.browsers, attempts: c.attempts, attemptLog }, null, 2),
+    JSON.stringify({ id: c.id, title: c.title, status, knownBug: c.knownBug, error: reason, locators: locatorsFor(c.file), script: rel(c.file.startsWith('tests') ? c.file : `tests/specs/${c.file}`), browsers: c.browsers, attempts, attemptLog }, null, 2),
   )
-  rows.push({ ...c, status, reason, failed, locators: locatorsFor(c.file) })
+  rows.push({ ...c, status, reason, failed, attempts, locators: locatorsFor(c.file) })
 }
 
 const passed = rows.filter((r) => r.status === 'passed').length

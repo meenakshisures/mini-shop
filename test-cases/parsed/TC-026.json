@@ -1,0 +1,16 @@
+{
+  "id": "TC-026",
+  "title": "Search item, add to cart, and clear search",
+  "preconditions": [
+    "User is logged in on /products"
+  ],
+  "steps": [
+    "Type 'Desk' in search.",
+    "Click 'Add to cart' on Desk Lamp.",
+    "Clear search box."
+  ],
+  "testData": {
+    "search": "Desk"
+  },
+  "expectedResult": "Desk Lamp is added to cart showing badge 1, and clearing search retains cart badge while showing all products."
+}

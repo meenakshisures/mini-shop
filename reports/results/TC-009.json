@@ -1,17 +1,17 @@
 {
   "id": "TC-009",
   "title": "Search filters the product list",
-  "status": "passed",
+  "status": "failed",
   "knownBug": null,
-  "error": null,
+  "error": "Firefox test timed out after 30 seconds. Chromium and WebKit passed.",
   "locators": {
-    "ProductsPage.heading": "getByRole('heading', { name: 'Products' })",
-    "ProductsPage.spinner": "getByTestId('loading-spinner')",
-    "ProductsPage.searchInput": "getByTestId('search-input')",
-    "ProductsPage.sortSelect": "getByTestId('sort-select')",
-    "ProductsPage.noResultsMessage": "getByTestId('no-results-message')",
-    "ProductsPage.productCards": "locator('[data-testid^=\"product-card-\"]')",
-    "ProductsPage.productNames": "locator('[data-testid^=\"product-link-\"]')",
+    "ProductsPage.heading": "getByRole('heading', { name: 'Products' })\r",
+    "ProductsPage.spinner": "getByTestId('loading-spinner')\r",
+    "ProductsPage.searchInput": "getByTestId('search-input')\r",
+    "ProductsPage.sortSelect": "getByTestId('sort-select')\r",
+    "ProductsPage.noResultsMessage": "getByTestId('no-results-message')\r",
+    "ProductsPage.productCards": "locator('[data-testid^=\"product-card-\"]')\r",
+    "ProductsPage.productNames": "locator('[data-testid^=\"product-link-\"]')\r",
     "ProductsPage.addToCartButton()": "getByTestId(`add-to-cart-${productId}`)",
     "ProductsPage.addToBasketButton()": "getByTestId(`add-to-basket-${productId}`)",
     "ProductsPage.removeButton()": "getByTestId(`remove-button-${productId}`)",
@@ -26,10 +26,10 @@
       "error": null
     },
     "firefox": {
-      "status": "passed",
-      "screenshot": "test-results/TC-009-TC-009-Search-filters-the-product-list-firefox/test-finished-1.png",
+      "status": "failed",
+      "screenshot": null,
       "trace": "test-results/TC-009-TC-009-Search-filters-the-product-list-firefox/trace.zip",
-      "error": null
+      "error": "Test timeout of 30000ms exceeded."
     },
     "webkit": {
       "status": "passed",

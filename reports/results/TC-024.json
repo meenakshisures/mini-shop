@@ -1,0 +1,50 @@
+{
+  "id": "TC-024",
+  "title": "User logout succeeds",
+  "status": "passed",
+  "knownBug": null,
+  "error": null,
+  "locators": {
+    "HeaderComponent.cartBadge": "getByTestId('cart-badge')\r",
+    "HeaderComponent.cartLink": "getByTestId('cart-link')\r",
+    "HeaderComponent.productsLink": "getByTestId('nav-products-link')\r",
+    "HeaderComponent.settingsLink": "getByTestId('nav-settings-link')\r",
+    "HeaderComponent.logoutButton": "getByTestId('logout-button')\r"
+  },
+  "script": "tests/specs/TC-024.spec.ts",
+  "browsers": {
+    "chromium": {
+      "status": "passed",
+      "screenshot": "test-results/TC-024-TC-024-User-logout-succeeds-chromium/test-finished-1.png",
+      "trace": "test-results/TC-024-TC-024-User-logout-succeeds-chromium/trace.zip",
+      "error": null
+    },
+    "firefox": {
+      "status": "passed",
+      "screenshot": "test-results/TC-024-TC-024-User-logout-succeeds-firefox/test-finished-1.png",
+      "trace": "test-results/TC-024-TC-024-User-logout-succeeds-firefox/trace.zip",
+      "error": null
+    },
+    "webkit": {
+      "status": "passed",
+      "screenshot": "test-results/TC-024-TC-024-User-logout-succeeds-webkit/test-finished-1.png",
+      "trace": "test-results/TC-024-TC-024-User-logout-succeeds-webkit/trace.zip",
+      "error": null
+    }
+  },
+  "attempts": 1,
+  "attemptLog": [
+    {
+      "attempt": 1,
+      "classification": "timing problem",
+      "change": "No change.",
+      "reason": "The prior recorded run found the login page instead of the logout control, so the logged-in page precondition was not reached."
+    },
+    {
+      "attempt": 2,
+      "classification": "timing problem",
+      "change": "Added navigation to /products before checking and clicking Logout.",
+      "reason": "The first run of the completed spec failed because it checked the logout button without navigating to the authenticated page."
+    }
+  ]
+}

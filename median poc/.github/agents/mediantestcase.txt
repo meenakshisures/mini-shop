@@ -1,0 +1,1 @@
+1.Verify that valid user can able to login and view the dashboard 1.login using user name and password 2.able to view dashboard 3.verify the text present in the dashboard "Real-time assembly quality and test progress"

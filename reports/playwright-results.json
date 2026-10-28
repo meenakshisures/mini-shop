@@ -4,7 +4,7 @@
       "C:\\Program Files\\nodejs\\node.exe",
       "C:\\Users\\TVM0881\\mini-shop\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "tests/specs/TC-026.spec.ts"
+      "tests/specs/TC-027.spec.ts"
     ],
     "configFile": "C:\\Users\\TVM0881\\mini-shop\\playwright.config.ts",
     "rootDir": "C:/Users/TVM0881/mini-shop/tests/specs",
@@ -303,12 +303,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 24614,
+                  "duration": 17817,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-23T06:49:42.060Z",
+                  "startTime": "2026-10-27T06:52:18.126Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -335,13 +335,13 @@
       ]
     },
     {
-      "title": "TC-026.spec.ts",
-      "file": "TC-026.spec.ts",
+      "title": "TC-027.spec.ts",
+      "file": "TC-027.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "TC-026: Search item, add to cart, and clear search",
+          "title": "TC-027: Special characters search and clear",
           "ok": false,
           "tags": [],
           "tests": [
@@ -356,7 +356,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "timedOut",
-                  "duration": 35858,
+                  "duration": 30346,
                   "error": {
                     "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m",
                     "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
@@ -369,28 +369,18 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-23T06:50:43.845Z",
+                  "startTime": "2026-10-27T06:52:58.911Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-026-TC-026-Search-item-add-to-cart-and-clear-search-chromium\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-026-TC-026-Search-item-add-to-cart-and-clear-search-chromium\\test-failed-1.png"
-                    },
-                    {
                       "name": "error-context",
                       "contentType": "text/markdown",
-                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-026-TC-026-Search-item-add-to-cart-and-clear-search-chromium\\error-context.md"
+                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-027-TC-027-Special-characters-search-and-clear-chromium\\error-context.md"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-026-TC-026-Search-item-add-to-cart-and-clear-search-chromium\\trace.zip"
+                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-027-TC-027-Special-characters-search-and-clear-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -398,14 +388,14 @@
               "status": "unexpected"
             }
           ],
-          "id": "f97ea5c49a5cb0b05d26-85fdbf7b2b66a5363fe2",
-          "file": "TC-026.spec.ts",
-          "line": 5,
+          "id": "f25cce21bc501249b882-e37af92186476288a0a0",
+          "file": "TC-027.spec.ts",
+          "line": 4,
           "column": 1
         },
         {
-          "title": "TC-026: Search item, add to cart, and clear search",
-          "ok": false,
+          "title": "TC-027: Special characters search and clear",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -418,65 +408,38 @@
                 {
                   "workerIndex": 2,
                   "parallelIndex": 1,
-                  "status": "timedOut",
-                  "duration": 60015,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
-                    },
-                    {
-                      "message": "Error: browserContext.close: Test timeout of 30000ms exceeded.\nBrowser logs:\n\n<launching> C:\\Users\\TVM0881\\AppData\\Local\\ms-playwright\\firefox-1555\\firefox\\firefox.exe -no-remote -headless -profile C:\\Users\\TVM0881\\AppData\\Local\\Temp\\playwright_firefoxdev_profile-gO2cMZ -juggler-pipe -silent\n<launched> pid=6208\n[pid=6208][err] *** You are running in headless mode.\n[pid=6208][err] JavaScript warning: resource://services-settings/Utils.sys.mjs, line 125: unreachable code after return statement\n[pid=6208][out] \n[pid=6208][out] Juggler listening to the pipe\n[pid=6208][out] Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=15.5672) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt\n[pid=6208][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]\n[pid=6208][out] console.error: [Exception... \"Favicon at \"http://localhost:5173/favicon.ico\" failed to load.\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource:///modules/FaviconLoader.sys.mjs :: onStopRequest :: line 282\"  data: no]\n[pid=6208][out] console.warn: services.settings: #fetchAttachment: Forcing fallbackToDump to false due to Utils.LOAD_DUMPS being false\n[pid=6208][out] console.error: (new NotFoundError(\"Could not find fa0fc42c-d91d-fca7-34eb-806ff46062dc in cache or dump\", \"resource://services-settings/Attachments.sys.mjs\", 48))\n[pid=6208][out] console.warn: \"Unable to find the attachment for\" \"fa0fc42c-d91d-fca7-34eb-806ff46062dc\"\n[pid=6208][err] [ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE\n[pid=6208][out] console.error: \"Error fetching the wallpaper attachments URL\" (new SyntaxError(\"JSON.parse: unexpected end of data at line 1 column 1 of the JSON data\", \"\"))\n[pid=6208][err] [ERROR shell_windows::taskbar::shortcut] Error matching shortcut: Error { code: HRESULT(0x80004005), message: \"Unspecified error\" }\n[pid=6208][out] console.error: services.settings: \n[pid=6208][out]   Message: EmptyDatabaseError: \"main/nimbus-desktop-experiments\" has not been synced yet\n[pid=6208][out]   Stack:\n[pid=6208][out]     EmptyDatabaseError@resource://services-settings/Database.sys.mjs:19:5\n[pid=6208][out] list@resource://services-settings/Database.sys.mjs:96:13\n[pid=6208][out] \n[pid=6208][err] [ERROR shell_windows::taskbar::shortcut] Error matching shortcut: Error { code: HRESULT(0x80004005), message: \"Unspecified error\" }\n[pid=6208][err] [ERROR shell_windows::taskbar::shortcut] Error matching shortcut: Error { code: HRESULT(0x80004005), message: \"Unspecified error\" }\n[pid=6208][out] console.error: [Exception... \"Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIWinTaskbar.getTaskbarProgress]\"  nsresult: \"0x80070057 (NS_ERROR_ILLEGAL_VALUE)\"  location: \"JS frame :: moz-src:///browser/components/downloads/DownloadsTaskbar.sys.mjs :: #windowsAttachIndicator :: line 181\"  data: no]\n[pid=6208][err] JavaScript error: chrome://juggler/content/Helper.js, line 82: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]\n[pid=6208][out] console.error: [Exception... \"Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIWinTaskbar.getTaskbarProgress]\"  nsresult: \"0x80070057 (NS_ERROR_ILLEGAL_VALUE)\"  location: \"JS frame :: moz-src:///browser/components/downloads/DownloadsTaskbar.sys.mjs :: #windowsAttachIndicator :: line 181\"  data: no]\n[pid=6208][out] console.error: services.settings: \n[pid=6208][out]   Message: EmptyDatabaseError: \"main/nimbus-desktop-experiments\" has not been synced yet\n[pid=6208][out]   Stack:\n[pid=6208][out]     EmptyDatabaseError@resource://services-settings/Database.sys.mjs:19:5\n[pid=6208][out] list@resource://services-settings/Database.sys.mjs:96:13\n[pid=6208][out] \n[pid=6208] <gracefully close start>\n[pid=6208] <kill>\n[pid=6208] <will force kill>\n[pid=6208][out] Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=15.5672) |[1][GFX1-]: VideoBridgeParent receives IPC close with reason=AbnormalShutdown (t=112.547) [GFX1-]: VideoBridgeParent receives IPC close with reason=AbnormalShutdown"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\Users\\TVM0881\\mini-shop\\tests\\pages\\ProductsPage.ts",
-                        "column": 21,
-                        "line": 23
-                      },
-                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5173/products\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\ProductsPage.ts:23\n\n  21 |\n  22 |   async open(path = '/products') {\n> 23 |     await this.page.goto(path)\n     |                     ^\n  24 |   }\n  25 |\n  26 |   /** Waits for the loading spinner to go away (1.5s on v1, 4s on v2). */\n    at ProductsPage.open (C:\\Users\\TVM0881\\mini-shop\\tests\\pages\\ProductsPage.ts:23:21)\n    at C:\\Users\\TVM0881\\mini-shop\\tests\\specs\\TC-026.spec.ts:9:22"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 27967,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-23T06:50:43.292Z",
+                  "startTime": "2026-10-27T06:52:58.945Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-026-TC-026-Search-item-add-to-cart-and-clear-search-firefox\\test-failed-1.png"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-026-TC-026-Search-item-add-to-cart-and-clear-search-firefox\\error-context.md"
+                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-027-TC-027-Special-characters-search-and-clear-firefox\\test-finished-1.png"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-026-TC-026-Search-item-add-to-cart-and-clear-search-firefox\\trace.zip"
+                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-027-TC-027-Special-characters-search-and-clear-firefox\\trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "f97ea5c49a5cb0b05d26-828745f5c83be1247b42",
-          "file": "TC-026.spec.ts",
-          "line": 5,
+          "id": "f25cce21bc501249b882-4aa0dec6837f736ef5e1",
+          "file": "TC-027.spec.ts",
+          "line": 4,
           "column": 1
         },
         {
-          "title": "TC-026: Search item, add to cart, and clear search",
+          "title": "TC-027: Special characters search and clear",
           "ok": true,
           "tags": [],
           "tests": [
@@ -489,25 +452,25 @@
               "results": [
                 {
                   "workerIndex": 3,
-                  "parallelIndex": 0,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 27234,
+                  "duration": 7627,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-23T06:53:04.235Z",
+                  "startTime": "2026-10-27T06:53:51.775Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-026-TC-026-Search-item-add-to-cart-and-clear-search-webkit\\test-finished-1.png"
+                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-027-TC-027-Special-characters-search-and-clear-webkit\\test-finished-1.png"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-026-TC-026-Search-item-add-to-cart-and-clear-search-webkit\\trace.zip"
+                      "path": "C:\\Users\\TVM0881\\mini-shop\\test-results\\TC-027-TC-027-Special-characters-search-and-clear-webkit\\trace.zip"
                     }
                   ]
                 }
@@ -515,9 +478,9 @@
               "status": "expected"
             }
           ],
-          "id": "f97ea5c49a5cb0b05d26-eb4b404ef91d7f2d08fb",
-          "file": "TC-026.spec.ts",
-          "line": 5,
+          "id": "f25cce21bc501249b882-90ac3304c8eeaf529ab1",
+          "file": "TC-027.spec.ts",
+          "line": 4,
           "column": 1
         }
       ]
@@ -525,11 +488,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-23T06:49:34.482Z",
-    "duration": 242271.75400000002,
-    "expected": 2,
+    "startTime": "2026-10-27T06:52:14.419Z",
+    "duration": 113366.63,
+    "expected": 3,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 1,
     "flaky": 0
   }
 }

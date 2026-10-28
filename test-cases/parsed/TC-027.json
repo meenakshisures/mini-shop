@@ -1,0 +1,15 @@
+{
+  "id": "TC-027",
+  "title": "Special characters search and clear",
+  "preconditions": [
+    "User is logged in on /products"
+  ],
+  "steps": [
+    "Type '@#$' in search box.",
+    "Clear search box."
+  ],
+  "testData": {
+    "search": "@#$"
+  },
+  "expectedResult": "'No products found.' message appears for special characters, and clearing search restores the default product list."
+}
